@@ -1,0 +1,53 @@
+.contenedor{
+  width: 100vw;
+  height: 4rem;
+  background-color: var(--colorUno);
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+figure{
+  width: 6rem;
+  height: auto;
+}
+
+.activologo{
+  transition: filter 0.3s ease-in-out;
+  filter:drop-shadow(0 0 6px var(--colorTres));
+}
+
+.nav{
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav a{
+  margin: 0 1rem;
+}
+
+.nav a h3{
+  color: inherit;
+}
+
+.activonav{
+  transition: transform 0.3s ease-in-out,color 0.5s ease-in-out;
+  transform: scale(1.2);
+  border-bottom: 2px solid var(--colorTres);
+  color:var(--colorTres);
+}
+
+.select{
+  color:var(--colorUno);
+  height: 2rem;
+  width: 3rem;
+  border: 1px solid var(--colorDos);
+  border-radius: 0.5rem;
+}
+
+.select option{
+  color: inherit;
+}
