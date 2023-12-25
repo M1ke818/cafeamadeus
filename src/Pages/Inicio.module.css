@@ -1,0 +1,60 @@
+
+.contenedor{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/portada-cafes-1400w.png");
+  background-color: var(--colorDos);
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(12,8.3%);
+  grid-template-rows: repeat(12,8.3%);
+}
+
+.h1{
+  align-self: flex-end;
+  text-align: center;
+  grid-column: 2/12;
+  grid-row: 1/3;
+}
+
+.btn1{
+  width: 6rem;
+  background-color: var(--colorDos);
+  border-color:var(--colorCuatro);
+  grid-column: 5/6;
+  grid-row: 4/6;
+}
+
+
+.btn2{
+  width: 6rem;
+  background-color: var(--colorDos);
+  border-color:var(--colorCuatro);
+  grid-column: 8/9;
+  grid-row: 4/6;
+}
+
+.h2{
+  text-align: center;
+  grid-column: 5/9;
+  grid-row: 5/6;
+}
+
+.section{
+  padding: 0 2rem;
+  grid-row: 5/13;
+  grid-column: 1/13;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.activo{
+  font-size: 1.5rem;
+  color: var(--colorCuatro);
+  background-color: var(--colorTres);
+  border-radius:inherit;
+  border-width: inherit;
+}
