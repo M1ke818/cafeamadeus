@@ -8,6 +8,7 @@ import Productos from './Components/Productos'
 import Nosotros from './Pages/Nosotros'
 import Ambiente from './Components/Ambiente'
 import Historia from './Components/Historia'
+import Contacto from './Pages/Contacto'
 
 const idiomaInicial="es"
 const traductor={
@@ -83,8 +84,33 @@ const traductor={
        "y trabajamos directamente con la fundación",
        "Ayudando.com.mx",
        "apoyandolos en la alimentacion diaria de personas de bajos recursos."],
-       foto:"https://drive.google.com/uc?export=view&id=1fn3X0rQ8QgiKM7XOmjvZ8EntCL4m1mRE"}]
-  },
+       foto:"https://drive.google.com/uc?export=view&id=1fn3X0rQ8QgiKM7XOmjvZ8EntCL4m1mRE"}],
+      contactoSeccion:[{
+          "id":1,
+          "nombre":"nombre",
+          "placeholder":"Amadeus González"
+        },
+        {
+          "id":2,
+          "nombre":"correo electrónico",
+          "placeholder":"cafe.amadeus@email.com"
+        },
+        {
+          "id":3,
+          "nombre":"asunto",
+          "placeholder":"Hola, me gusto mucho su café..."
+        },
+        {
+          "id":4,
+          "nombre":"Siguenos en nuestras redes sociales",
+          "placeholder":null
+        },
+        {
+          "id":5,
+          "nombre":"enviar",
+          "placeholder":null
+        }]
+    },
   en:{
     nosotros:"us",
     contacto:"contact",
@@ -159,6 +185,33 @@ const traductor={
          "supporting them in the daily feeding of low-income people."
         ],
         foto:"https://drive.google.com/uc?export=view&id=1fn3X0rQ8QgiKM7XOmjvZ8EntCL4m1mRE"}],
+        contactoSeccion:[
+          {
+            "id":1,
+            "nombre":"name",
+            "placeholder":"Amadeus Smith"
+          },
+          {
+            "id":2,
+            "nombre":"email",
+            "placeholder":"amadeus.coffee@email.com"
+          },
+          {
+            "id":3,
+            "nombre":"topic",
+            "placeholder":"Hello, I liked too much your coffee..."
+          },
+          {
+            "id":4,
+            "nombre":"Follow us on social media",
+            "placeholder":null
+          },
+          {
+            "id":5,
+            "nombre":"send",
+            "placeholder":null
+          }
+        ]
   }
 }
 
@@ -190,7 +243,7 @@ function App() {
               <Route index element={<Historia textos={textos.nosotrosSeccion}/>}/>
               <Route path="ambiente" element={<Ambiente textos={textos.nosotrosSeccion[1]}/>}/>
             </Route>
-          <Route path="/contacto" element="contacto"/>
+          <Route path="/contacto" element={<Contacto textos={textos.contactoSeccion}/>}/>
         </Routes>
       </HashRouter>
     </>

@@ -1,0 +1,54 @@
+.contenedor{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(var(--colorTres),var(--colorUno));
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+.formulario *:not(label){
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  background-color: var(--colorTres);
+  border: 1px solid white;
+}
+
+.formulario *:not(label,textarea){
+  height: 2rem;
+}
+
+
+
+.formulario [type=submit]{
+  width: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+label{
+  margin-top: 1rem;
+}
+
+.footer{
+  margin-top: 4rem;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.footer *:not(p){
+  color:var(--colorTres);
+  font-size: 4rem;
+  margin: 3rem 1.5rem;
+  cursor:pointer;
+}
