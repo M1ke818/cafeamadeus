@@ -1,8 +1,8 @@
-# React + Vite
+# Mi primera página en REACT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta página, por el momento, solo esta en version Desktop, mi intención es mejorarla en unos meses y ya hacerla con Responsive Design.
 
-Currently, two official plugins are available:
+Puedes checar como se ve dando clic [aquí](https://m1ke818.github.io/cafeamadeus/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Esta página esta inspirada en [Cafe Amadeus](https://cafeamadeus.com.mx/)
